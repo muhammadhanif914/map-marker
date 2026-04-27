@@ -1,3 +1,4 @@
+// tambahin marker data disini dengan format dibawah
 window.MARKER_DATA = [
  
    {
