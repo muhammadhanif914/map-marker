@@ -25,77 +25,15 @@
 </header>
 
 <div class="layout">
-  <aside class="sidebar">
-
-    <div class="sidebar-section">
-      <div class="section-label">Tambah Marker</div>
-      <div class="input-group">
-        <input type="text" id="markerName" placeholder="Nama lokasi…"/>
-        <textarea id="markerDesc" placeholder="Deskripsi (opsional)…"></textarea>
-        <div class="input-row">
-          <input type="number" id="markerLat" placeholder="Latitude" step="any"/>
-          <input type="number" id="markerLng" placeholder="Longitude" step="any"/>
-        </div>
-
-        <div class="section-label">Warna Marker</div>
-        <div class="color-row" id="colorPicker"></div>
-
-        <div class="input-row">
-          <button class="btn btn-secondary btn-full" id="pickFromMapBtn">🖱 Klik di Peta</button>
-          <button class="btn btn-primary btn-full" id="addMarkerBtn">+ Tambah</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="sidebar-section">
-      <div class="section-label">Cari Marker</div>
-      <input type="text" id="searchInput" placeholder="Cari nama lokasi…"/>
-    </div>
-
-    <div class="marker-list" id="markerList"></div>
-
-    <div class="stats-bar">
-      <div class="stat">
-        <span class="stat-val" id="statTotal">0</span>
-        <span class="stat-label">Marker</span>
-      </div>
-      <div class="stat">
-        <span class="stat-val" id="statLat">5.5502</span>
-        <span class="stat-label">Lat Center</span>
-      </div>
-      <div class="stat">
-        <span class="stat-val" id="statLng">95.3188</span>
-        <span class="stat-label">Lng Center</span>
-      </div>
-    </div>
-  </aside>
-
-  <div style="position:relative;flex:1;">
+  <div class="map-panel">
     <div id="map"></div>
-    <div class="map-hint" id="mapHint">💡 Klik di peta untuk menempatkan marker</div>
   </div>
 </div>
-
-<!-- Modal -->
-<div class="modal-overlay" id="editModal">
-  <div class="modal">
-    <div class="modal-title">✏️ Edit Marker</div>
-    <input type="text" id="editName"/>
-    <textarea id="editDesc"></textarea>
-    <div class="color-row" id="editColorPicker"></div>
-    <div class="modal-actions">
-      <button id="cancelEditBtn">Batal</button>
-      <button id="saveEditBtn">Simpan</button>
-    </div>
-  </div>
-</div>
-
-<div class="toast" id="toast"></div>
 
 <!-- Leaflet -->
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
-<!-- Custom JS -->
+<!-- Marker Data -->
 <script src="script.js"></script>
 </body>
 </html>
