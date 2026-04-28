@@ -24,6 +24,14 @@ window.MARKER_DATA = [
     lat: 5.545,
     lng: 95.315,
     color: '#ff6b6b',
+  },
+  {
+    id: 'm4',
+    name: 'RSUD Dr. Zainoel Abidin',
+    desc: 'Rumah sakit rujukan utama di Provinsi Aceh yang melayani berbagai fasilitas kesehatan untuk masyarakat.',
+    lat: 5.5637127,
+    lng: 95.3375876,
+    color: '#58a6ff',
   }
 
 ];
