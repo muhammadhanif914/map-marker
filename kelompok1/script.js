@@ -120,6 +120,14 @@ window.MARKER_DATA = [
     lat: 5.9059351,
     lng: 95.2168454,
     color: '#39d353',
+  },
+  {
+    id: 'm16',
+    name: 'Gua Sarang Sabang - Desa Wisata Iboih',
+    desc: 'Berlokasi di kawasan hutan lindung Sabang, destinasi ini menawarkan tebing-tebing karang eksotis yang menjorok ke laut dengan air yang sangat jernih, cocok untuk berenang atau berfoto.',
+    lat: 5.8270768,
+    lng: 95.259526,
+    color: '#39d353',
   }
 
 ];
