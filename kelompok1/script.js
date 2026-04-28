@@ -115,22 +115,6 @@ window.MARKER_DATA = [
   },
   {
     id: 'm15',
-    name: 'Monumen Kilometer Nol Indonesia',
-    desc: 'Berada di ujung paling barat Indonesia, monumen ikonik di Sabang ini menawarkan pemandangan langsung ke Laut Andaman dari atas terasnya, menjadikannya titik wajib bagi wisatawan.',
-    lat: 5.9059351,
-    lng: 95.2168454,
-    color: '#39d353',
-  },
-  {
-    id: 'm16',
-    name: 'Gua Sarang Sabang - Desa Wisata Iboih',
-    desc: 'Berlokasi di kawasan hutan lindung Sabang, destinasi ini menawarkan tebing-tebing karang eksotis yang menjorok ke laut dengan air yang sangat jernih, cocok untuk berenang atau berfoto.',
-    lat: 5.8270768,
-    lng: 95.259526,
-    color: '#39d353',
-  },
-  {
-    id: 'm17',
     name: 'Pantai Ulee Lheue',
     desc: 'Terletak sangat dekat dengan pusat kota Banda Aceh, pantai ini adalah tempat favorit warga untuk menikmati matahari terbenam (sunset) sambil menikmati jagung bakar atau kopi di sepanjang tanggul.',
     lat: 5.5562723,
@@ -138,11 +122,19 @@ window.MARKER_DATA = [
     color: '#39d353',
   },
   {
-    id: 'm18',
+    id: 'm16',
     name: 'Taman Ratu Safiatuddin',
     desc: 'Sering disebut sebagai "Taman Mini"-nya Aceh, tempat ini berisi rumah-rumah tradisional (Rumoh Aceh) dari seluruh kabupaten/kota yang ada di Provinsi Aceh. Lokasinya berada di kawasan Lampineung.',
     lat: 5.5701968,
     lng: 95.3440733,
+    color: '#39d353',
+  },
+  {
+    id: 'm17',
+    name: 'Puncak Geurutee',
+    desc: 'Meskipun berada di perbatasan Aceh Besar dan Aceh Jaya, tempat ini adalah destinasi "healing" favorit. Dari atas puncak, kamu bisa melihat pemandangan samudera luas dan pulau-pulau kecil (Pulau Kluat dan Pulau Suduen).',
+    lat: 5.2530182,
+    lng: 95.2750692,
     color: '#39d353',
   }
 
