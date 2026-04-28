@@ -112,6 +112,14 @@ window.MARKER_DATA = [
     lat: 5.4643339,
     lng: 95.2418239,
     color: '#39d353',
+  },
+  {
+    id: 'm15',
+    name: 'Monumen Kilometer Nol Indonesia',
+    desc: 'Berada di ujung paling barat Indonesia, monumen ikonik di Sabang ini menawarkan pemandangan langsung ke Laut Andaman dari atas terasnya, menjadikannya titik wajib bagi wisatawan.',
+    lat: 5.9059351,
+    lng: 95.2168454,
+    color: '#39d353',
   }
 
 ];
