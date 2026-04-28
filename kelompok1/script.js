@@ -9,6 +9,23 @@ window.MARKER_DATA = [
      lng: 95.31372113431843,
      color: '#39d353',
   },
+  {
+    id: 'm2',
+    name: 'Masjid Raya Baiturrahman',
+    desc: 'Masjid raya yang menjadi ikon kota Banda Aceh, dengan arsitektur yang indah dan sejarah yang kaya.',
+    lat: 5.5472,
+    lng: 95.3188,
+    color: '#ff6b6b',
+  },
+  {
+    id: 'm3',
+    name: 'Museum Aceh',
+    desc: 'Museum yang menampilkan koleksi bersejarah tentang budaya dan sejarah Aceh.',
+    lat: 5.545,
+    lng: 95.315,
+    color: '#ff6b6b',
+  }
+
 ];
 
 const BANDA_ACEH = [5.5502, 95.3188];
