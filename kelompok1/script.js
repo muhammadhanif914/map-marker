@@ -55,7 +55,15 @@ window.MARKER_DATA = [
     desc: 'Rumah sakit umum daerah yang juga menjadi fasilitas rujukan penting di Banda Aceh.',
     lat: 5.5181295,
     lng: 95.317819,
-    color: '#22c55e',
+    color: '#58a6ff',
+  },
+  {
+    id: 'm8',
+    name: 'Rumah Sakit Ibu dan Anak (RSIA) Pemerintah Aceh',
+    desc: 'Pusat rujukan terkemuka khusus untuk pelayanan kesehatan ibu dan anak.',
+    lat: 5.5501867,
+    lng: 95.3120107,
+    color: '#58a6ff',
   }
 
 ];
