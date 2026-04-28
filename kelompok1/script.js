@@ -136,6 +136,14 @@ window.MARKER_DATA = [
     lat: 5.5562723,
     lng: 95.2891965,
     color: '#39d353',
+  },
+  {
+    id: 'm18',
+    name: 'Taman Ratu Safiatuddin',
+    desc: 'Sering disebut sebagai "Taman Mini"-nya Aceh, tempat ini berisi rumah-rumah tradisional (Rumoh Aceh) dari seluruh kabupaten/kota yang ada di Provinsi Aceh. Lokasinya berada di kawasan Lampineung.',
+    lat: 5.5701968,
+    lng: 95.3440733,
+    color: '#39d353',
   }
 
 ];
