@@ -96,6 +96,22 @@ window.MARKER_DATA = [
     lat: 5.5492933,
     lng: 95.3266564,
     color: '#58a6ff',
+  },
+  {
+    id: 'm13',
+    name: 'RS Teungku Fakinah',
+    desc: 'Salah satu rumah sakit swasta yang cukup lama beroperasi di Banda Aceh dan melayani berbagai kebutuhan medis dasar dan spesialis.',
+    lat: 5.5296849,
+    lng: 95.3040224,
+    color: '#58a6ff',
+  },
+  {
+    id: 'm14',
+    name: 'Pantai Lhoknga',
+    desc: 'Pantai berpasir putih di Aceh Besar ini sangat populer sebagai lokasi berselancar (surfing), memancing, atau sekadar bersantai sambil menikmati pemandangan bukit berhutan di sekitarnya.',
+    lat: 5.4643339,
+    lng: 95.2418239,
+    color: '#39d353',
   }
 
 ];
