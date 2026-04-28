@@ -72,6 +72,14 @@ window.MARKER_DATA = [
     lat: 5.5638464,
     lng: 95.3699504,
     color: '#58a6ff',
+  },
+  {
+    id: 'm10',
+    name: 'Rumah Sakit Bhayangkara Polda Aceh',
+    desc: 'Rumah sakit milik Kepolisian Republik Indonesia yang melayani anggota Polri dan juga masyarakat umum.',
+    lat: 5.530308,
+    lng: 95.2947261,
+    color: '#58a6ff',
   }
 
 ];
