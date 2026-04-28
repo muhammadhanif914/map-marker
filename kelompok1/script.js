@@ -64,6 +64,14 @@ window.MARKER_DATA = [
     lat: 5.5501867,
     lng: 95.3120107,
     color: '#58a6ff',
+  },
+  {
+    id: 'm9',
+    name: 'Prince Nayef bin Abdul Aziz Hospital (RS Pendidikan USK)',
+    desc: 'Rumah sakit universitas yang berada di dalam lingkungan kampus Universitas Syiah Kuala (USK), tempat yang sangat strategis untuk penanganan kesehatan sivitas akademika.',
+    lat: 5.5638464,
+    lng: 95.3699504,
+    color: '#58a6ff',
   }
 
 ];
