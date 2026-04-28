@@ -48,6 +48,14 @@ window.MARKER_DATA = [
     lat: 5.5701829,
     lng: 95.3407722,
     color: '#a855f7',
+  },
+  {
+    id: 'm7',
+    name: 'RSUD Meuraxa',
+    desc: 'Rumah sakit umum daerah yang juga menjadi fasilitas rujukan penting di Banda Aceh.',
+    lat: 5.5181295,
+    lng: 95.317819,
+    color: '#22c55e',
   }
 
 ];
