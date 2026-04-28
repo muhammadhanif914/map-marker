@@ -136,6 +136,14 @@ window.MARKER_DATA = [
     lat: 5.2530182,
     lng: 95.2750692,
     color: '#39d353',
+  },
+  {
+    id: 'm18',
+    name: 'Pantai Ujong Batee',
+    desc: 'Pantai ini terkenal dengan pasir hitamnya yang diyakini masyarakat setempat memiliki khasiat terapi, serta deretan pohon cemara yang rindang di sepanjang bibir pantai. Lokasinya sangat cocok untuk bersantai dan menjadi destinasi favorit keluarga, terutama pada akhir pekan.',
+    lat: 5.6499521,
+    lng: 95.4195857,
+    color: '#39d353',
   }
 
 ];
