@@ -41,6 +41,8 @@ const map = L.map('map', {
   zoomControl: true,
 });
 
+const markerListEl = document.getElementById('markerList');
+
 map.setMaxBounds(BANDA_ACEH_BOUNDS);
 map.fitBounds(BANDA_ACEH_BOUNDS);
 map.setMinZoom(12);
@@ -70,15 +72,84 @@ function buildPopup(m) {
 }
 
 const markers = Array.isArray(window.MARKER_DATA) ? window.MARKER_DATA : [];
+const markerEntries = [];
+
+function setActiveMarker(markerId) {
+  if (!markerListEl) return;
+
+  markerListEl.querySelectorAll('.marker-card').forEach(card => {
+    card.classList.toggle('active', card.dataset.markerId === markerId);
+  });
+}
+
+function renderMarkerList(items) {
+  if (!markerListEl) return;
+
+  if (!items.length) {
+    markerListEl.innerHTML = `
+      <div class="empty-state">
+        <div class="icon">📍</div>
+        <p>Belum ada lokasi yang ditambahkan.</p>
+      </div>
+    `;
+    return;
+  }
+
+  markerListEl.innerHTML = items.map(item => `
+    <div class="marker-card" role="button" tabindex="0" data-marker-id="${item.id}">
+      <div class="marker-card-header">
+        <div class="marker-card-title">
+          <span class="marker-dot" style="background:${item.color}"></span>
+          <span>${item.name}</span>
+        </div>
+      </div>
+      ${item.desc ? `<div class="marker-card-desc">${item.desc}</div>` : ''}
+      <div class="marker-card-coords">${item.lat.toFixed(6)}, ${item.lng.toFixed(6)}</div>
+    </div>
+  `).join('');
+
+  markerListEl.querySelectorAll('.marker-card').forEach(card => {
+    const markerId = card.dataset.markerId;
+    const entry = markerEntries.find(item => item.id === markerId);
+
+    if (!entry) return;
+
+    const openMarker = () => {
+      setActiveMarker(markerId);
+      map.flyTo([entry.lat, entry.lng], 16, { duration: 0.5 });
+      entry.leafletMarker.openPopup();
+    };
+
+    card.addEventListener('click', openMarker);
+    card.addEventListener('keydown', event => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        openMarker();
+      }
+    });
+  });
+}
 
 markers.forEach(m => {
-  L.marker([m.lat, m.lng], { icon: makeIcon(m.color || '#39d353') })
+  const normalized = {
+    id: m.id || `marker-${markerEntries.length + 1}`,
+    name: m.name || 'Marker',
+    desc: m.desc || '',
+    lat: Number(m.lat),
+    lng: Number(m.lng),
+    color: m.color || '#39d353',
+  };
+
+  const leafletMarker = L.marker([normalized.lat, normalized.lng], { icon: makeIcon(normalized.color) })
     .addTo(map)
-    .bindPopup(buildPopup({
-      name: m.name || 'Marker',
-      desc: m.desc || '',
-      lat: Number(m.lat),
-      lng: Number(m.lng),
-      color: m.color || '#39d353',
-    }));
+    .bindPopup(buildPopup(normalized));
+
+  leafletMarker.on('popupopen', () => setActiveMarker(normalized.id));
+
+  markerEntries.push({
+    ...normalized,
+    leafletMarker,
+  });
 });
+
+renderMarkerList(markerEntries);
