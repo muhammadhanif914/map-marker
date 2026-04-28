@@ -80,6 +80,14 @@ window.MARKER_DATA = [
     lat: 5.530308,
     lng: 95.2947261,
     color: '#58a6ff',
+  },
+  {
+    id: 'm11',
+    name: 'Rumah Sakit Tk.II Iskandar Muda (RS Kesdam)',
+    desc: 'Fasilitas kesehatan di bawah naungan TNI AD yang melayani prajurit, PNS militer, dan juga menerima pasien dari kalangan masyarakat sipil.',
+    lat: 5.554657,
+    lng: 95.3241101,
+    color: '#58a6ff',
   }
 
 ];
