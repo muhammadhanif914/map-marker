@@ -32,6 +32,14 @@ window.MARKER_DATA = [
     lat: 5.5637127,
     lng: 95.3375876,
     color: '#58a6ff',
+  },
+  {
+    id: 'm5',
+    name: 'Universitas Syiah Kuala',
+    desc: 'Pusat pendidikan perguruan tinggi negeri tertua dan terbesar di Aceh yang berlokasi di kawasan Darussalam.',
+    lat: 5.5700635,
+    lng: 95.3697285,
+    color: '#f59e0b',
   }
 
 ];
