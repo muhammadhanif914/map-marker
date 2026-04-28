@@ -40,6 +40,14 @@ window.MARKER_DATA = [
     lat: 5.5700635,
     lng: 95.3697285,
     color: '#f59e0b',
+  },
+  {
+    id: 'm6',
+    name: 'Kantor Gubernur Aceh',
+    desc: 'Gedung pusat pemerintahan dan tata kelola administrasi utama untuk wilayah Provinsi Aceh.',
+    lat: 5.5701829,
+    lng: 95.3407722,
+    color: '#a855f7',
   }
 
 ];
