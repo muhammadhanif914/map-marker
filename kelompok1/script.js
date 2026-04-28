@@ -128,6 +128,14 @@ window.MARKER_DATA = [
     lat: 5.8270768,
     lng: 95.259526,
     color: '#39d353',
+  },
+  {
+    id: 'm17',
+    name: 'Pantai Ulee Lheue',
+    desc: 'Terletak sangat dekat dengan pusat kota Banda Aceh, pantai ini adalah tempat favorit warga untuk menikmati matahari terbenam (sunset) sambil menikmati jagung bakar atau kopi di sepanjang tanggul.',
+    lat: 5.5562723,
+    lng: 95.2891965,
+    color: '#39d353',
   }
 
 ];
