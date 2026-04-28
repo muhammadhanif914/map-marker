@@ -88,6 +88,14 @@ window.MARKER_DATA = [
     lat: 5.554657,
     lng: 95.3241101,
     color: '#58a6ff',
+  },
+  {
+    id: 'm12',
+    name: 'RSPUR (RS Pertamedika Ummi Rosnati)',
+    desc: 'Sebuah rumah sakit swasta tipe C di Banda Aceh yang merupakan hasil kerja sama Pertamedika dan PT Malahayati Surya Persada.',
+    lat: 5.5492933,
+    lng: 95.3266564,
+    color: '#58a6ff',
   }
 
 ];
